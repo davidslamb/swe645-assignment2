@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+namespace: default
+images:
+- name: assignment2
+  newName: 817286919980.dkr.ecr.us-east-1.amazonaws.com/dlamb9/assignment2
+  newTag: latest
