@@ -30,6 +30,13 @@ jobs:
           java-version: 1.8
           # The package type (jre, jdk, jdk+fx)
           java-package: jdk
+    
+          # Runs a single command using the runners shell
+      - name: Build .war
+        run: |
+          pushd WebContent
+          jar -cvf ../ROOT.war *
+          popd
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -43,15 +50,11 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Build, tag, and push image to Amazon ECR
+        id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: dlamb9/assignment2
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          pushd WebContent
-          jar -cvf ROOT.war *
-          ls -l
-          popd
-          ls -lR
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
