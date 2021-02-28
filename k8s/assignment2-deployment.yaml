@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assignment2-workload
+  namespace: default
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - image: 817286919980.dkr.ecr.us-east-1.amazonaws.com/dlamb9/assignment2:e0869e7f18b64d9f0c17b589c2cef5fa0b991137
+        imagePullPolicy: Always
+        name: assignment2-workload
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
