@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<title>Assignment 2.2</title>
+<title>Assignment 2.0</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,7 +13,7 @@
 <!-- Header -->
 <header class="w3-container w3-theme w3-padding" id="myHeader">
   <div class="w3-center">
-  	<h1 class="w3-xxxlarge w3-animate-bottom">Assignment 2.2</h1>
+  	<h1 class="w3-xxxlarge w3-animate-bottom">Assignment 2.0</h1>
   </div>
 </header>
 
