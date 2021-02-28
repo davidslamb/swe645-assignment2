@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<title>Assignment 1</title>
+<title>Assignment 2.0</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,7 +13,7 @@
 <!-- Header -->
 <header class="w3-container w3-theme w3-padding" id="myHeader">
   <div class="w3-center">
-  	<h1 class="w3-xxxlarge w3-animate-bottom">Assignment 1</h1>
+  	<h1 class="w3-xxxlarge w3-animate-bottom">Assignment 2.0</h1>
   </div>
 </header>
 
@@ -86,10 +86,10 @@
     <div class="w3-col l6 m12">
       How did you become interested in this university?
       <ul class="w3-ul w3-margin-bottom">
-        <li><label><input class="w3-radio" type="radio"> Friends</label></li>
-        <li><label><input class="w3-radio" type="radio"> Television</label></li>
-        <li><label><input class="w3-radio" type="radio"> Internet</label></li>
-        <li><label><input class="w3-radio" type="radio"> Other</label></li>
+        <li><label><input class="w3-radio" type="radio" name="interested"> Friends</label></li>
+        <li><label><input class="w3-radio" type="radio" name="interested"> Television</label></li>
+        <li><label><input class="w3-radio" type="radio" name="interested"> Internet</label></li>
+        <li><label><input class="w3-radio" type="radio" name="interested"> Other</label></li>
       </ul>
 	</div>
   </div>
