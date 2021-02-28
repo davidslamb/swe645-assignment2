@@ -34,7 +34,6 @@ jobs:
           # Runs a single command using the runners shell
       - name: Build .war
         run: |
-          rm ROOT.war
           pushd WebContent
           jar -cvf ..\ROOT.war *
           popd
