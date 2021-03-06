@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assignment2-workload
+  name: assignment2-app
   namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: deployment-default-assignment2-workload
+      workload.user.cattle.io/workloadselector: deployment-default-assignment2-app
   template:
     spec:
       containers:
       - image: assignment2
         imagePullPolicy: Always
-        name: assignment2-workload
+        name: assignment2-app
         ports:
         - containerPort: 8080
           name: http
