@@ -6,4 +6,4 @@ namespace: default
 images:
 - name: assignment2
   newName: 817286919980.dkr.ecr.us-east-1.amazonaws.com/dlamb9/assignment2
-  newTag: 97930b280c9e83401924180071f3d961c39626c5
+  newTag: 92fc13aa0f0e048030106c3d8dc317d73ee11c9e
